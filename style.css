@@ -55,7 +55,14 @@
 .main-container {
     background-color: #151218;
 }
-
+.page-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--first-color);
+    border-radius: 25%;
+    padding: 10px;
+}
 .home-container {
     position: relative;
     height: 100vh;
@@ -347,9 +354,8 @@ a {
     border-radius: 50%;
     transition: transform 0.3s;
 }
-
 .copywrite {
-    font-size: 0.9375rem;
+    font-size: 15px;
     font-weight: 200;
 }
 
@@ -374,6 +380,7 @@ a {
     box-shadow: 0 0 20px #246c9b;
     transform: translateY(-3px);
 }
+
 
 @keyframes bounce {
     0%{
@@ -724,8 +731,12 @@ a {
     }
 
     #about-me-intro {
-        font-size: 0.7rem;
+        font-size: 15px;
         line-height: 1.5;
+    }
+
+    .buttons{
+        margin: 7px;
     }
 
     .intro-page-right {
@@ -753,8 +764,8 @@ a {
 
     .btn-click {
         margin: 10px 5px 5px 0;
-        padding: 5px;
-        font-size: 0.7rem;
+        padding: 10px;
+        font-size: 13px;
         border-width: 1.5px;
     }
     
@@ -776,9 +787,8 @@ a {
 
     /* Achievements */
     .achievements-container-main {
-        margin: auto 50px;
+        margin: auto 0 auto 30%;
     }
-
     .achievements-container {
         display: flex;
         justify-content: space-around;
@@ -786,11 +796,11 @@ a {
 
     .achievement-heading {
         margin: 0 auto 70px 0;
-        width: 50%;
+        width: 100%;
     }
 
     .topic {
-        font-size: 13px;
+        font-size: 15px;
         text-align: center;
         margin: 5px 0;
         padding: 5px 50px 5px 0;
@@ -798,7 +808,7 @@ a {
     }
 
     .achievement-topics {
-        width: 150px;
+        width: 160px;
     }
 
     .vertical-line {
@@ -1040,7 +1050,7 @@ a {
         font-size: 20px;
     }
     .topic{
-        font-size: 10px;
+        font-size: 13px;
         line-height: 2;
     }
     .achievements-container-right{
@@ -1054,7 +1064,7 @@ a {
         font-size: 18px;
     }
     .cert-detail{
-        font-size: 12px;
+        font-size: 13px;
         line-height: 1.4;
     }
 
@@ -1080,14 +1090,14 @@ a {
         /* text-align: left; */
     }
     .p-info{
-        font-size: 10px;
+        font-size: 12px;
         margin: 10px;
     }
     .i-info{
         margin-right: 10px;
     }
     .contacts-container button{
-        margin-top: 35px;
+        margin-top: 30px;
     }
     .contacts-container-bottom hr{
         margin: 20px auto;
