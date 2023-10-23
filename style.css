@@ -135,9 +135,6 @@ a {
 .intro-page {
     margin: 0;
     position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .profile-img-hover:hover {
@@ -633,7 +630,9 @@ a {
         font-size: 12px;
         line-height: 1.5;
     }
-
+    .home-container{
+        position: relative;
+    }
     /* Nav bar */
     .nav-container {
         display: flex;
@@ -675,8 +674,9 @@ a {
 
     /* Intro */
     .intro-page {
-        /* position: relative; */
-        margin: auto 50px;
+        position: absolute;
+        margin: 0 50px;
+        top: 10%;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -697,7 +697,7 @@ a {
     .intro-page-right {
         position: relative;
         margin: 10px auto auto;
-        padding: 30px;
+        padding: 20px;
         height: 300px;
         width: 100%;
         /* text-align: center; */
@@ -921,8 +921,8 @@ a {
     /* intro */
     .intro-page {
         position: absolute;
-        top: 50%;
-        margin: 70px 30px;
+        /* top: 50%; */
+        margin: 0 30px;
         display: flex;
         flex-direction: column-reverse;
 
