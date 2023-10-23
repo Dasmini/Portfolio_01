@@ -627,7 +627,7 @@ a {
 
 @media (min-width: 500px) and (max-width: 999px) {
     p {
-        font-size: 12px;
+        font-size: 15px;
         line-height: 1.5;
     }
     .home-container{
@@ -848,7 +848,6 @@ a {
 }
 
 @media (min-width: 250px) and (max-width:500px) {
-
     /* Nav bar */
     .home-container {
         position: relative;
@@ -947,7 +946,7 @@ a {
         font-size: 20px;
     }
     #about-me-intro{
-        font-size: 10px;
+        font-size: 12px;
         line-height: 1.4;
     }
     .btn-click{
