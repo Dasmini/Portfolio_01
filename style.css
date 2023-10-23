@@ -62,6 +62,7 @@
     background-color: var(--first-color);
     border-radius: 25%;
     padding: 10px;
+    z-index: 1;
 }
 .home-container {
     position: relative;
