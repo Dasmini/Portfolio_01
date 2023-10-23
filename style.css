@@ -95,7 +95,14 @@
         opacity: 1;
     }
 }
-
+@keyframes fromRight {
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
 .nav-container {
     background-color: #151218;
     z-index: 5;
@@ -183,7 +190,9 @@ a {
     border: 3px solid var(--first-color);
     color: var(--btn-text-color);
 }
-
+.btn-click{
+    animation: bounce .5s ease forwards;
+}
 
 /* about */
 
@@ -366,6 +375,28 @@ a {
     transform: translateY(-3px);
 }
 
+@keyframes bounce {
+    0%{
+        transform: translateY(-15px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: translateY(-10px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    80%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
 @media (min-width: 1000px) and (max-width: 1920px) {
     .nav-container {
         display: flex;
@@ -476,6 +507,9 @@ a {
     }
     .buttons{
         padding: 20px;
+    }
+    .talk-div{
+        padding: 0 0 20px 20px;
     }
     .btn-click:hover{
         box-shadow: 0 0 20px var(--first-color);
@@ -900,23 +934,25 @@ a {
 
     .nav-container2 .new-nav-items {
         display: flex;
-        justify-content: flex-end;
-        align-items: end;
-        flex-direction: column;
+        justify-content: space-around;
+        /* align-items: end; */
+        /* flex-direction: column; */
 
     }
 
     .new-nav-item {
-        font-size: 11px;
-        margin: 1px;
+        font-size: 13px;
+        margin: 7px;
+        animation: bounce .5s ease forwards;
         display: none;
+    }
+   
+    .hello{
+        animation: fromRight 1s linear forwards;
     }
 
     .nav-container2 .new-nav-items {}
 
-    /* .hamburger{
-        visibility: visible;
-    } */
     /* intro */
     .intro-page {
         position: absolute;
@@ -946,14 +982,15 @@ a {
         font-size: 20px;
     }
     #about-me-intro{
-        font-size: 12px;
+        font-size: 13px;
         line-height: 1.4;
     }
     .btn-click{
-        margin: 5px 5px 0 0;
-        padding: 4px;
+        margin: 10px 5px 0 0;
+        padding: 7px;
         font-size: 10px;
         border-width: 1.5px;
+        animation: bounce .5s ease forwards;
     }
     .btn-click:hover{
         border-width: 1.5px;
@@ -971,7 +1008,7 @@ a {
         font-size: 25px;
     }
     .about-container-left p{
-        font-size: 10px;
+        font-size: 13px;
         line-height: 1.4;
     }
     .about-container-right h2{

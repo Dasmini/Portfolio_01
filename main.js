@@ -75,31 +75,11 @@ function emailSend() {
 
 function showNav(hamburgerIcon) {
     // let isClicked = true;
+    let navContainer = document.querySelectorAll(".new-nav-items");
     let navElements = document.querySelectorAll(".new-nav-item");
-    // if (isClicked) {
-    //     hamburger.setAttribute("data-clicked", "false");
-    //     navElements.forEach((item) => {
-    //         item.style.display = "block";
-    //     })
-    // }
-    // if (!hamburger.dataset.clicked) {
-    //     hamburger.removeAttribute("data-clicked");
-    //     navElements.forEach((item) => {
-    //         item.style.display = "none";
-    //     })
-    //     isClicked = false;
-    //     // navElements.style.display = "block"
-    // }
-    // document.querySelector(".hamburger").toggle(
-    //     function(){
+   
             navElements.forEach((item) => {
                         item.style.display = "block";
                     })
-    //     },
-    //     function(){
-    //         navElements.forEach((item) => {
-    //                     item.style.display = "none";
-    //                 })
-    //     }
-    // )
+
 }
