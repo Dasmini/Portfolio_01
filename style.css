@@ -365,10 +365,12 @@ a {
 .active-topic {
     color: var(--first-color);
     border-right: 3px solid var(--first-color);
+    background-color: #56656f62;
 }
 
 .active-topic:hover {
     color: var(--first-color);
+    /* border-right: 3px solid var(--first-color); */
 }
 
 .btn-send:hover {
@@ -1054,8 +1056,11 @@ a {
         font-size: 13px;
         line-height: 2;
     }
+    
     .achievements-container-right{
         text-align: center;
+        width: calc(100vw - 60px);
+        
     }
     .cert-img{
         height: 50px;
